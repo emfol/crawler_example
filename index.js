@@ -5,14 +5,20 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const app = express();
+const api = require("./lib/api");
 
 /**
- * Definitions
+ * Constants
  */
 
 const PORT = 8080;
 const PUBLIC_DIR = "public";
+
+/**
+ * Initialization
+ */
+
+const app = express();
 
 /**
  * Middlewares
@@ -28,6 +34,8 @@ app.use(express.static(path.join(__dirname, PUBLIC_DIR)));
 app.get("/ping", function (req, res) {
   return res.json({ message: "pong" });
 });
+
+app.get("/search", api.search);
 
 const port = process.env.PORT || PORT;
 app
