@@ -1,0 +1,28 @@
+{
+  "name": "crawler_example",
+  "version": "0.0.1",
+  "description": "A simple crawler example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emfol/crawler_example.git"
+  },
+  "keywords": [
+    "crawler"
+  ],
+  "author": "Emanuel F. Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emfol/crawler_example/issues"
+  },
+  "homepage": "https://github.com/emfol/crawler_example#readme",
+  "dependencies": {
+    "body-parser": "1.19.x",
+    "express": "4.17.x",
+    "fast-html-parser": "1.0.x"
+  }
+}
