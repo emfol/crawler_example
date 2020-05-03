@@ -1,0 +1,22 @@
+{
+  "log4js": {
+    "appenders": {
+      "stdout": {
+        "type": "stdout"
+      },
+      "server": {
+        "type": "file",
+        "filename": "./server.log"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "stdout",
+          "server"
+        ],
+        "level": "info"
+      }
+    }
+  }
+}
