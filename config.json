@@ -1,4 +1,5 @@
 {
+  "dataDir": ".cache",
   "log4js": {
     "appenders": {
       "stdout": {
@@ -6,7 +7,7 @@
       },
       "server": {
         "type": "file",
-        "filename": "./server.log"
+        "filename": "./app.log"
       }
     },
     "categories": {
