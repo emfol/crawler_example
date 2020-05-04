@@ -9,6 +9,12 @@ const api = require('./lib/api');
 const {log4js} = require('./lib/log4js');
 
 /**
+ * Crawlers
+ */
+
+require('./lib/crawlers');
+
+/**
  * Constants
  */
 
@@ -35,7 +41,7 @@ app.use(express.static(path.join(__dirname, PUBLIC_DIR)));
 
 app.get('/ping', (req, res) => res.json({message: 'pong'}));
 
-app.get('/search', api.search);
+app.post('/search', api.search);
 
 const port = process.env.PORT || PORT;
 app

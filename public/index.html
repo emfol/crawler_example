@@ -7,6 +7,22 @@
 </head>
 <body>
     <h1>Crawler Example</h1>
+    <h2>Endpoint: /search</h2>
+    <form>
+        <div>
+            <h3>Search:</h3>
+            <input type="text" id="search" size="40" />
+        </div>
+        <div>
+            <h3>Limit:</h3>
+            <input type="number" id="limit" size="4" min="10" max="500" />
+        </div>
+        <div>
+            <h3>Result:</h3>
+            <textarea rows="8" cols="40" id="result"></textarea>
+        </div>
+        <button id="action">Search</button>
+    </form>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

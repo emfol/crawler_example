@@ -1,5 +1,8 @@
 {
-  "dataDir": ".cache",
+  "cache": {
+    "dir": ".cache",
+    "ttl": 300000
+  },
   "log4js": {
     "appenders": {
       "stdout": {
