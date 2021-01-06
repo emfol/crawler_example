@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/emfol/crawler_example#readme",
   "dependencies": {
-    "axios": "0.19.x",
+    "axios": "0.21.x",
     "body-parser": "1.19.x",
     "express": "4.17.x",
     "fast-html-parser": "1.0.x",
